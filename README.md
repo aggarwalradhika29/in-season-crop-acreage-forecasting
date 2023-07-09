@@ -55,7 +55,7 @@ The automation flow is:
 
 ## GUI
 #### Welcome Screen
-![image](https://github.com/aggarwalradhika29/in-season-crop-acreage-forecasting/assets/91591831/bf08e8a0-9780-4819-ad43-3e35f7e411d6)
+<img src="https://github.com/aggarwalradhika29/in-season-crop-acreage-forecasting/assets/91591831/bf08e8a0-9780-4819-ad43-3e35f7e411d6.png" width=50% height=50%>
 
 #### User Inputs
 ![image](https://github.com/aggarwalradhika29/in-season-crop-acreage-forecasting/assets/91591831/99162804-d4f5-43b0-b472-1de58f339933)
