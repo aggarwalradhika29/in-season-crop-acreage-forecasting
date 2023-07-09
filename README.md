@@ -31,15 +31,15 @@ The major objectives of the study are:
 
 ## Methodology
 The automation flow is:
-      - Data download using ASF-Search
-      - Preprocessing using SNAP-Py
-      - Calibration
-      - Speckle Filter
-      - Subset
-      - Geometric Terrain Correction
-      - Mosaic
-      - Layer Stack
-      - LULC Mask
-      - Classification using scikit-learn
-      - Area Estimation
+      > Data download using ASF-Search
+      > Preprocessing using SNAP-Py
+      > Calibration
+      > Speckle Filter
+      > Subset
+      > Geometric Terrain Correction
+      > Mosaic
+      > Layer Stack
+      > LULC Mask
+      > Classification using scikit-learn
+      > Area Estimation
 
