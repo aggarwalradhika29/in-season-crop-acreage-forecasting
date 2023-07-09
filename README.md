@@ -21,7 +21,7 @@ The major objectives of the study are:
       - Good Internet Connectivity.
       - High Storage Drives.
         
-3.	Software Requirements
+2.	Software Requirements
       - Python 3.6.0 (for SNAP Python Interface), Python 3.11.0 (for ML models)
       - GDAL - Geospatial Data Abstraction Library
       - SNAP Python Interface
@@ -31,15 +31,14 @@ The major objectives of the study are:
 
 ## Methodology
 The automation flow is:
-      > Data download using ASF-Search
-      > Preprocessing using SNAP-Py
-      > Calibration
-      > Speckle Filter
-      > Subset
-      > Geometric Terrain Correction
-      > Mosaic
-      > Layer Stack
-      > LULC Mask
-      > Classification using scikit-learn
-      > Area Estimation
-
+1.	Data download using ASF-Search
+2.	Preprocessing using SNAP-Py
+3.	Calibration
+4.	Speckle Filter
+5.	Subset
+6.	Geometric Terrain Correction
+7.	Mosaic
+8.	Layer Stack
+9.	LULC Mask
+10.	Classification using scikit-learn
+11.	Area Estimation
