@@ -58,10 +58,10 @@ The automation flow is:
 <img src="https://github.com/aggarwalradhika29/in-season-crop-acreage-forecasting/assets/91591831/bf08e8a0-9780-4819-ad43-3e35f7e411d6.png" width=50% height=50%>
 
 #### User Inputs
-![image](https://github.com/aggarwalradhika29/in-season-crop-acreage-forecasting/assets/91591831/99162804-d4f5-43b0-b472-1de58f339933)
+<img src="https://github.com/aggarwalradhika29/in-season-crop-acreage-forecasting/assets/91591831/99162804-d4f5-43b0-b472-1de58f339933.png" width=50% height=50%>
 
 #### Data Download
-![image](https://github.com/aggarwalradhika29/in-season-crop-acreage-forecasting/assets/91591831/202f194e-a3d3-4d6c-9a4f-f15d7d622959)
+<img src="https://github.com/aggarwalradhika29/in-season-crop-acreage-forecasting/assets/91591831/202f194e-a3d3-4d6c-9a4f-f15d7d622959.png" width=50% height=50%>
 
 #### End Results
-![image](https://github.com/aggarwalradhika29/in-season-crop-acreage-forecasting/assets/91591831/12a4fb73-8e2b-4a67-a33c-8db20397949c)
+<img src="https://github.com/aggarwalradhika29/in-season-crop-acreage-forecasting/assets/91591831/12a4fb73-8e2b-4a67-a33c-8db20397949c.png" width=50% height=50%>
