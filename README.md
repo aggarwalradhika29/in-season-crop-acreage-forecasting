@@ -6,6 +6,8 @@ This repository contains a summary of the research study about the project I com
 
 The study proposes a GUI-based automation system for in-season multi-class crop classification and crop acreage estimation on SAR data using ML algorithms. The system provides options for two satellites - Sentinel-1A and RISAT-1, enabling users to download, preprocess, and classify the data quickly and efficiently. The preprocessing steps include radiometric calibration, speckle filtering, subset, geometric/terrain correction, mosaic, district masking, crop masking, and layer stacking. A backscatter curve is plotted using the ground truth points to validate the accuracy of the preprocessed image. The classification is performed using six ML algorithms, and hyperparameter tuning is done to optimize the model training parameters. After the classification, the output is sieved, and the area of each crop class is calculated using Python CSVs. The proposed automation system generates a single PDF file as a summarizing document, which includes the classification report, confusion matrix, backscatter curve, and classified image. The calculated multi-crop areas can also be visualized using pie charts, bar charts, etc. The system is highly efficient and accurate, available to be used by any layman, and it can provide valuable insights for stakeholders in the agricultural sector.
 
+###### An abbreviated name for the system has been drafted, i.e. Automated Numerical Analysis for Agricultural Juxtaposition (ANAAJ).
+
 ## Objectives
 The major objectives of the study are:
 1.	Automation of a set of processes to classify the SAR Sentinel-1A and EOS-4 data:
@@ -43,4 +45,23 @@ The automation flow is:
 8.	Layer Stack
 9.	LULC Mask
 10.	Classification using scikit-learn
-11.	Area Estimation
+      - Random Forests
+      - K-Nearest Neighbors
+      - Support Vector Machines
+      - Naive Bayes
+      - Decision Trees
+      - Multi-Layer Perceptron
+12.	Area Estimation
+
+## GUI
+#### Welcome Screen
+![image](https://github.com/aggarwalradhika29/in-season-crop-acreage-forecasting/assets/91591831/bf08e8a0-9780-4819-ad43-3e35f7e411d6)
+
+#### User Inputs
+![image](https://github.com/aggarwalradhika29/in-season-crop-acreage-forecasting/assets/91591831/99162804-d4f5-43b0-b472-1de58f339933)
+
+#### Data Download
+![image](https://github.com/aggarwalradhika29/in-season-crop-acreage-forecasting/assets/91591831/202f194e-a3d3-4d6c-9a4f-f15d7d622959)
+
+#### End Results
+![image](https://github.com/aggarwalradhika29/in-season-crop-acreage-forecasting/assets/91591831/12a4fb73-8e2b-4a67-a33c-8db20397949c)
