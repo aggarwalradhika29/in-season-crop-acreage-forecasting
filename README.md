@@ -1,13 +1,14 @@
 # in-season-crop-acreage-forecasting
 This repository contains a summary of the research study about the project I completed during my internship at RRSC, ISRO.
 ###### Mentored by: Scientist/Engineer 'SE' Akash Goyal
+[###### A research paper has also been drafted for the study.](https://docs.google.com/document/d/1oOewcrIgAmFQGtBUtfjht36DOOgw9990/edit?usp=sharing&ouid=106225230077402086577&rtpof=true&sd=true)
 ## Introduction
 ![image](https://github.com/aggarwalradhika29/in-season-crop-acreage-forecasting/assets/91591831/d7a2be5c-7b30-4e62-ae01-b575c296acb4)
 
 The study proposes a GUI-based automation system for in-season multi-class crop classification and crop acreage estimation on SAR data using ML algorithms. The system provides options for two satellites - Sentinel-1A and RISAT-1, enabling users to download, preprocess, and classify the data quickly and efficiently. The preprocessing steps include radiometric calibration, speckle filtering, subset, geometric/terrain correction, mosaic, district masking, crop masking, and layer stacking. A backscatter curve is plotted using the ground truth points to validate the accuracy of the preprocessed image. The classification is performed using six ML algorithms, and hyperparameter tuning is done to optimize the model training parameters. After the classification, the output is sieved, and the area of each crop class is calculated using Python CSVs. The proposed automation system generates a single PDF file as a summarizing document, which includes the classification report, confusion matrix, backscatter curve, and classified image. The calculated multi-crop areas can also be visualized using pie charts, bar charts, etc. The system is highly efficient and accurate, available to be used by any layman, and it can provide valuable insights for stakeholders in the agricultural sector.
 
 ###### An abbreviated name for the system has been drafted, i.e. Automated Numerical Analysis for Agricultural Juxtaposition (ANAAJ).
-###### A research paper has also been drafted for the study.
+
 
 ## Objectives
 The major objectives of the study are:
