@@ -18,18 +18,15 @@ def areaCalc():
             # Read the TIF file as an array
             print('Image has been read')
             image = src.read(1)
-
             # Extract the polygon shapes and grid codes
             print('Preparing results..')
             results = (
                 {'properties': {'grid_code': v}, 'geometry': s}
                 for i, (s, v) in enumerate(shapes(image, mask=None, transform=src.transform))
             )
-
             # Convert the polygon shapes to a GeoDataFrame
             geoms = list(results)
             gdf = gpd.GeoDataFrame.from_features(geoms)
-
             # Calculate the shape area
             gdf['area'] = gdf['geometry'].apply(lambda x: shape(x).area)
 
@@ -41,17 +38,12 @@ def areaCalc():
         print(data.head())
         uniqueClass = list(data['grid_code'].unique())
         print(uniqueClass)
-
         print(data['grid_code'].value_counts())
-
         uniqueClass.sort()
-
         areaList = []
         for i in uniqueClass:
             areaList.append((data[data.grid_code == i]['area'].sum())/10000)
-
         areaList = areaList[1:]
-
         shp = gpd.read_file(str(os.getcwd()) + r'\data\shapeFiles\GT\\groundTruth.shp')
         class_names = list(shp['name'].unique())
         class_names.sort()
@@ -59,13 +51,4 @@ def areaCalc():
         df = pd.DataFrame(list(zip(class_names, areaList)), columns = ['Crops', 'Area (in hectares)'])
         print(df)
         df.to_csv(str(os.getcwd()) + r'\data\commonData\classifiedData\\' + str(p) + r'\\cropArea.csv')
-
-
-
-
-
 # areaCalc()
-
-
-
-
