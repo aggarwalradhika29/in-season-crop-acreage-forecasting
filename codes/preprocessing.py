@@ -9,30 +9,6 @@ from pathlib import Path
 from timeit import default_timer as timer
 start= timer()
 print(start)
-# http://sisdp_rrscn:SISdp_RRscn@192.168.0.9:8080
-# proxy details
-proxies = {
-    "http": "http://sisdp_rrscn:SISdp_RRscn@192.168.0.9:8080",
-    "https": "https://sisdp_rrscn:SISdp_RRscn@192.168.0.9:8080",
-}
-
-# Find and download earth gravitational model model 
-
-egm96url = "http://step.esa.int/auxdata/dem/egm96/ww15mgh_b.zip"
-response = requests.get(egm96url, proxies=proxies)
-home_dir = os.path.expanduser("~")
-snap_folder = os.path.join(home_dir, ".snap")
-
-if os.path.exists(snap_folder):
-    print(f"The .snap folder is located at: {snap_folder}")
-else:
-    print("The .snap folder does not exist.")
-print(snap_folder)
-fileegm = str(snap_folder) + '\\auxdata\dem\egm96\\/ww15mgh_b.zip'
-with open(fileegm, "wb") as f:
-    f.write(response.content)
-
-print('Earth Gravitational Model Loaded!')
 # load SNAP GPF
 GPF.getDefaultInstance().getOperatorSpiRegistry().loadOperatorSpis()
 HashMap = snappy.jpy.get_type('java.util.HashMap')
@@ -125,59 +101,6 @@ for pol in polar:
 
             # find and download srtm 1sec hgt for each tile
             subset1= ProductIO.readProduct(subset + '.dim')
-            # Get the geocoding object
-            geoCoding = subset1.getSceneGeoCoding()
-
-            # Get the size of the product
-            width = subset1.getSceneRasterWidth()
-            height = subset1.getSceneRasterHeight()
-
-            # Create arrays to store the latitude and longitude values
-            lat_array = snappy.jpy.array('float', height*width)
-            lon_array = snappy.jpy.array('float', height*width)
-
-            # output1.close()
-            
-            # Iterate over all pixels in the product and retrieve the latitude and longitude values
-            for y in range(height):
-                for x in range(width):
-                    pos = geoCoding.getGeoPos(snappy.PixelPos(x, y), None)
-                    lat_array[y*width+x] = pos.getLat()
-                    lon_array[y*width+x] = pos.getLon()
-
-            if len(lat_array) != 0 or len(lon_array) != 0:
-            # Print the latitude and longitude values of the first pixel in the product
-                lat = int(lat_array[0])
-                long= int(lon_array[0])
-                print(lat)
-                print(long)
-                latitude_str = ''
-                longitude_str = ''
-                if lat>=0:
-                    latitude_str = 'N'
-                else:
-                    latitude_str = 'S'
-
-                if lat>=0:
-                    longitude_str = 'E'
-                else:
-                    longitude_str = 'W'
-
-                longList = [ long, long-1, long+1]
-                latList = [lat, lat-1]
-                for i in longList:
-                    for j in latList:
-                        hgtZip = 'http://step.esa.int/auxdata/dem/SRTMGL1/' + str(latitude_str) + str(j) + str(longitude_str) + '0' + str(i) + '.SRTMGL1.hgt.zip'
-                        print(hgtZip)
-                        filename = snap_folder + '\\auxdata\dem\SRTM 1Sec HGT\\' + hgtZip[-23:]
-                        print(filename)
-                        print(hgtZip[-23:])
-
-                        srtm = requests.get(hgtZip, proxies=proxies)
-                        with open(filename, "wb") as f:
-                            f.write(srtm.content)
-                print('DEM : SRTM 1Sec HGT Loaded!')    
-
             ### TERRAIN CORRECTION
             print('Terrain Correction started.')
             
