@@ -1,5 +1,5 @@
 # in-season-crop-acreage-forecasting
-This repository contains a summary of the research study about the project I completed during my internship at RRSC, ISRO.
+This repository contains a summary of the desktop app i developed during my research study on the in-season crop acreage forecasting and mapping.
 ###### Mentored by: Scientist/Engineer 'SE' Akash Goyal
 ###### [A research paper of the study is also under submission.](https://docs.google.com/document/d/1oOewcrIgAmFQGtBUtfjht36DOOgw9990/edit?usp=sharing&ouid=106225230077402086577&rtpof=true&sd=true)
 ## Introduction
