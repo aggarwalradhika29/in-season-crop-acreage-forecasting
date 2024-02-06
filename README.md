@@ -1,7 +1,7 @@
 # in-season-crop-acreage-forecasting
 This repository contains a summary of the research study about the project I completed during my internship at RRSC, ISRO.
 ###### Mentored by: Scientist/Engineer 'SE' Akash Goyal
-###### [A research paper of the study is also in the process.](https://docs.google.com/document/d/1oOewcrIgAmFQGtBUtfjht36DOOgw9990/edit?usp=sharing&ouid=106225230077402086577&rtpof=true&sd=true)
+###### [A research paper of the study is also under submission.](https://docs.google.com/document/d/1oOewcrIgAmFQGtBUtfjht36DOOgw9990/edit?usp=sharing&ouid=106225230077402086577&rtpof=true&sd=true)
 ## Introduction
 ![image](https://github.com/aggarwalradhika29/in-season-crop-acreage-forecasting/assets/91591831/d7a2be5c-7b30-4e62-ae01-b575c296acb4)
 
